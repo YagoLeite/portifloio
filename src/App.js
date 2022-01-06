@@ -13,7 +13,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div className="wrapper">
       <Particles
         className="particles-canvas"
         params={{
@@ -44,7 +44,7 @@ function App() {
       {/* <Testimonials /> */}
       <Contacts />
       <Footer />
-    </>
+    </div>
   );
 }
 

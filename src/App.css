@@ -57,6 +57,10 @@ nav ul li {
   .navbar-brand {
     width: 7rem;
   }
+
+  .wrapper {
+    width: 100%;
+  }
 }
 
 .navbar-nav > li > a.active,
@@ -396,6 +400,9 @@ nav ul li {
   .portfolio-image-popupbox {
     width: 100%;
   }
+  .portfolio-image {
+    width: 100%;
+  }
 }
 
 @media (max-height: 570px) {
@@ -581,6 +588,10 @@ textarea.form-control {
 
   .contacts p {
     padding: 0 0.4rem;
+  }
+
+  .overflow {
+    width: 100%;
   }
 }
 
