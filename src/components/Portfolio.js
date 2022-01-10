@@ -3,6 +3,7 @@ import netflix from "../images/yagoflix.png";
 import foodapp from "../images/foodapp.png";
 import curriculum from "../images/curriculum.png";
 import musicplayer from "../images/musicplayer.png";
+import quotespicture from "../images/quotes.png";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -188,6 +189,51 @@ const Pofrfolio = () => {
     });
   };
 
+  // React router practice
+
+  const openPopupboxQuotes = () => {
+    const content = (
+      <>
+        <img
+          className="portfolio-image-popupbox"
+          src={quotespicture}
+          alt="Task Manager React and Redux Project..."
+        />
+        <p>Application using React Router</p>
+        <b>Demo:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("http://quotes-21e0d.firebaseapp.com", "_blank")
+          }
+        >
+          quotes-21e0d.web.app/
+        </a>
+        <br />
+        <b>GitHub:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://github.com/YagoLeite/quots", "_blank")
+          }
+        >
+          https://github.com/YagoLeite/quotes
+        </a>
+      </>
+    );
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "React Router Project",
+        },
+        fadeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
+  };
+
   return (
     <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
@@ -235,8 +281,19 @@ const Pofrfolio = () => {
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxQuotes}>
+            <img
+              className="portfolio-image"
+              src={quotespicture}
+              alt="Task Manager React and Redux Project..."
+            />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
         </div>
       </div>
+      <PopupboxContainer />
       <PopupboxContainer />
       <PopupboxContainer />
       <PopupboxContainer />
