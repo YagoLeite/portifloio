@@ -3,6 +3,7 @@ import netflix from "../images/yagoflix.png";
 import foodapp from "../images/foodapp.png";
 import curriculum from "../images/curriculum.png";
 import musicplayer from "../images/musicplayer.png";
+import crypto from "../images/crypto.png";
 import quotespicture from "../images/quotes.png";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,6 +13,50 @@ import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Pofrfolio = () => {
+  // Crypto
+  const openPopupboxCrypto = () => {
+    const content = (
+      <>
+        <img
+          className="portfolio-image-popupbox"
+          src={crypto}
+          alt="Crypto Tracker project"
+        />
+        <p>A Crypto currency tracker</p>
+        <b>Demo:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://crypto-tracker-3e62e.web.app", "_blank")
+          }
+        >
+          https://crypto-tracker-3e62e.web.app
+        </a>
+        <br />
+        <b>GitHub:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://github.com/YagoLeite/crypto-tracker")
+          }
+        >
+          https://github.com/YagoLeite/crypto-tracker
+        </a>
+      </>
+    );
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Crypto Tracker.",
+        },
+        fadeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
+  };
+
   // Netflix
   const openPopupboxNetflix = () => {
     const content = (
@@ -239,11 +284,11 @@ const Pofrfolio = () => {
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row display-grid">
-          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
+          <div className="portfolio-image-box" onClick={openPopupboxCrypto}>
             <img
               className="portfolio-image"
-              src={netflix}
-              alt="Netflix Clone Project..."
+              src={crypto}
+              alt="Crypto Tracker."
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
@@ -291,8 +336,19 @@ const Pofrfolio = () => {
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
+            <img
+              className="portfolio-image"
+              src={netflix}
+              alt="Netflix Clone Project..."
+            />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
         </div>
       </div>
+      <PopupboxContainer />
       <PopupboxContainer />
       <PopupboxContainer />
       <PopupboxContainer />
