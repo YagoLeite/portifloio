@@ -17,12 +17,13 @@ const AboutMe = () => {
             Hello! I am Yago. Currently, I am a Mathematics teacher at The
             British School of Rio de Janeiro. I started studying web development
             in 2021. So far, I’ve managed to learn some key technologies such as
-            JavaScript, React, Chakra UI, Routing and Git. I started my journey
-            with simple HTML, CSS and JavaScript. As I developed my JavaScript
-            skills, I started a React course at Udemy. There, I’ve learned the
-            core of React applications and how to manipulate state using hooks.
-            Right now, I’m looking forwards to changing careers, applying what
-            I’ve learned and continue to develop my skills.
+            JavaScript, React, NextJS, Redux, Chakra UI, Routing and Git. I
+            started my journey with simple HTML, CSS and JavaScript. As I
+            developed my JavaScript skills, I started a React course at Udemy.
+            There, I’ve learned the core of React applications and how to
+            manipulate state using hooks. Right now, I’m looking forwards to
+            changing careers, applying what I’ve learned and continue to develop
+            my skills.
           </p>
         </div>
       </div>
