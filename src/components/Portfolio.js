@@ -1,10 +1,10 @@
 import React from "react";
 import netflix from "../images/yagoflix.png";
-import foodapp from "../images/foodapp.png";
+import jokenpo from "../images/jokenpo.png";
 import curriculum from "../images/curriculum.png";
-import musicplayer from "../images/musicplayer.png";
+import countrycodex from "../images/countrycodex.png";
 import crypto from "../images/crypto.png";
-import quotespicture from "../images/quotes.png";
+import adviceapp from "../images/adviceapp.png";
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -23,7 +23,7 @@ const Pofrfolio = () => {
           alt="Crypto Tracker project"
         />
         <p>A Crypto currency tracker</p>
-        <b>Demo:</b>{" "}
+        <b className="respirada">Demo:</b>
         <a
           className="hyper-link"
           onClick={() =>
@@ -33,7 +33,7 @@ const Pofrfolio = () => {
           https://crypto-tracker-3e62e.web.app
         </a>
         <br />
-        <b>GitHub:</b>{" "}
+        <b className="respirada">GitHub:</b>
         <a
           className="hyper-link"
           onClick={() =>
@@ -67,7 +67,7 @@ const Pofrfolio = () => {
           alt="Netflix Clone Project..."
         />
         <p>My first attempt at recreating a famous website using React.</p>
-        <b>Demo:</b>{" "}
+        <b className="respirada">Demo:</b>
         <a
           className="hyper-link"
           onClick={() =>
@@ -77,7 +77,7 @@ const Pofrfolio = () => {
           https://yagoflix-14b2a.web.app/#
         </a>
         <br />
-        <b>GitHub:</b>{" "}
+        <b className="respirada">GitHub:</b>
         <a
           className="hyper-link"
           onClick={() => window.open("https://github.com/YagoLeite/yagoflix")}
@@ -99,37 +99,34 @@ const Pofrfolio = () => {
     });
   };
 
-  // Food App
-  const openPopupboxFoodApp = () => {
+  // Jokenpo
+  const openPopupboxJokenpoApp = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={foodapp}
-          alt="City Guide App Project..."
+          src={jokenpo}
+          alt="Rock, Paper and Scissors App Project..."
         />
-        <p>
-          Practice React application using hooks. Also, data is being fetched
-          from Firebase.
-        </p>
-        <b>Demo:</b>{" "}
+        <p>Challenge by Frontend Mentor</p>
+        <b className="respirada">Demo:</b>
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://food-app-5f5e6.firebaseapp.com", "_blank")
+            window.open("https://jokenpo-inky.vercel.app", "_blank")
           }
         >
-          https://food-app-5f5e6.firebaseapp.com
+          https://jokenpo-inky.vercel.app
         </a>
         <br />
-        <b>GitHub:</b>{" "}
+        <b className="respirada">GitHub:</b>
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://github.com/YagoLeite/Food-App", "_blank")
+            window.open("https://github.com/YagoLeite/jokenpo", "_blank")
           }
         >
-          https://github.com/YagoLeite/Food-App
+          https://github.com/YagoLeite/jokenpo
         </a>
       </>
     );
@@ -138,7 +135,7 @@ const Pofrfolio = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Food App project.",
+          text: "Frontend Mentor Challenge - Rock, Paper and Scissors",
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -156,7 +153,7 @@ const Pofrfolio = () => {
           alt="Portfolio Project..."
         />
         <p>My web-curriculum using only HTML, CSS and JavaScript.</p>
-        <b>Demo:</b>{" "}
+        <b className="respirada">Demo:</b>
         <a
           className="hyper-link"
           onClick={() =>
@@ -166,7 +163,7 @@ const Pofrfolio = () => {
           https://yagoleite.github.io/My-Cv/
         </a>
         <br />
-        <b>GitHub:</b>{" "}
+        <b className="respirada">GitHub:</b>
         <a
           className="hyper-link"
           onClick={() =>
@@ -190,34 +187,37 @@ const Pofrfolio = () => {
     });
   };
 
-  // Task Manager React and Redux Project
-  const openPopupboxMediaPlayer = () => {
+  // Country Codex Project
+  const openPopupboxCountryCodex = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={musicplayer}
-          alt="Task Manager React and Redux Project..."
+          src={countrycodex}
+          alt="Country Codex Project..."
         />
-        <p>Media player using only HTML, CSS and JavaScript.</p>
-        <b>Demo:</b>{" "}
+        <p>Challenge by Frontend Mentor</p>
+        <b className="respirada">Demo:</b>
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://yagoleite.github.io/music-player/", "_blank")
+            window.open("https://country-codex.vercel.app", "_blank")
           }
         >
-          https://yagoleite.github.io/music-player/
+          https://country-codex.vercel.app
         </a>
         <br />
-        <b>GitHub:</b>{" "}
+        <b className="respirada">GitHub:</b>
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://github.com/YagoLeite/music-player", "_blank")
+            window.open(
+              "https://github.com/YagoLeite/where-in-the-world",
+              "_blank"
+            )
           }
         >
-          https://github.com/YagoLeite/music-player
+          https://github.com/YagoLeite/where-in-the-world
         </a>
       </>
     );
@@ -226,7 +226,7 @@ const Pofrfolio = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Music player project.",
+          text: "Frontend Mentor Challenge - Rest Country API",
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -236,33 +236,36 @@ const Pofrfolio = () => {
 
   // React router practice
 
-  const openPopupboxQuotes = () => {
+  const openPopupbox = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={quotespicture}
-          alt="Task Manager React and Redux Project..."
+          src={adviceapp}
+          alt="Advice Project..."
         />
-        <p>Application using React Router</p>
-        <b>Demo:</b>{" "}
+        <p>Frontend Mentor Challenge - Advice Generator</p>
+        <b className="respirada">Demo:</b>
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("http://quotes-21e0d.firebaseapp.com", "_blank")
+            window.open("https://advice-generator-sigma.vercel.app", "_blank")
           }
         >
-          quotes-21e0d.web.app/
+          https://advice-generator-sigma.vercel.app
         </a>
         <br />
-        <b>GitHub:</b>{" "}
+        <b className="respirada">GitHub:</b>
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://github.com/YagoLeite/quots", "_blank")
+            window.open(
+              "https://github.com/YagoLeite/advice-generator",
+              "_blank"
+            )
           }
         >
-          https://github.com/YagoLeite/quotes
+          https://github.com/YagoLeite/advice-generator
         </a>
       </>
     );
@@ -271,7 +274,7 @@ const Pofrfolio = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "React Router Project",
+          text: "Frontend Mentor Challenge - Advice Generator",
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -294,10 +297,10 @@ const Pofrfolio = () => {
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxFoodApp}>
+          <div className="portfolio-image-box" onClick={openPopupboxJokenpoApp}>
             <img
               className="portfolio-image"
-              src={foodapp}
+              src={jokenpo}
               alt="Food App Project..."
             />
             <div className="overflow"></div>
@@ -316,21 +319,21 @@ const Pofrfolio = () => {
           {/* - */}
           <div
             className="portfolio-image-box"
-            onClick={openPopupboxMediaPlayer}
+            onClick={openPopupboxCountryCodex}
           >
             <img
               className="portfolio-image"
-              src={musicplayer}
+              src={countrycodex}
               alt="Task Manager React and Redux Project..."
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className="portfolio-image-box" onClick={openPopupboxQuotes}>
+          <div className="portfolio-image-box" onClick={openPopupbox}>
             <img
               className="portfolio-image"
-              src={quotespicture}
+              src={adviceapp}
               alt="Task Manager React and Redux Project..."
             />
             <div className="overflow"></div>
